@@ -1,0 +1,112 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    form {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    #inputValue {
+        width: 70%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-right: 10px;
+    }
+
+    #addbtn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #addbtn:hover {
+        background-color: rgb(10, 10, 156);
+    }
+
+    #task-list {
+        margin-top: 20px;
+    }
+
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e9f5e9;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+    }
+
+    .list-item:hover {
+        background-color: #d2edd2;
+    }
+
+    .list-item li {
+        list-style: none;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .deletebtn {
+        padding: 6px 12px;
+        font-size: 14px;
+        background-color: #e53935;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .deletebtn:hover {
+        background-color: #c62828;
+    }
+
+    @media (max-width: 600px) {
+        #inputValue {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #addbtn {
+            width: 100%;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
