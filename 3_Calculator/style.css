@@ -1,0 +1,85 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Center the calculator */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212; /* Dark background */
+}
+
+/* Main container */
+.box {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 320px;
+}
+
+/* Display screen */
+#display {
+  width: 100%;
+  height: 60px;
+  background: #252525;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+/* Button grid */
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* General button style */
+.btns button {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btns button:hover {
+  background: #444;
+}
+
+/* Highlight specific buttons */
+.btns button:nth-child(1) { background: #f39c12; } /* % */
+.btns button:nth-child(2) { background: #f39c12; } /* . */
+.btns button:nth-child(3) { background: #e74c3c; } /* backspace */
+.btns button:nth-child(4) { background: #e74c3c; } /* clear */
+
+.btns button:nth-child(8),
+.btns button:nth-child(12),
+.btns button:nth-child(16),
+.btns button:nth-child(20) {
+  background: #2980b9; /* operators: *, -, +, / */
+}
+
+.btns button:nth-child(21) {
+  background: #27ae60; /* = */
+  color: #fff;
+  font-weight: bold;
+}
+
+.btns button:nth-child(21):hover {
+  background: #2ecc71;
+}
