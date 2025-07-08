@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <!-- input field search  -->
+      <form class="weather_header">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="city_name" placeholder="Search your City...." />
+      </form>
+
+      <!-- Weather main data -->
+
+      <div class="weather_body">
+        <h1 class="weather_city"></h1>
+        <p class="weather_date_time"></p>
+        <h2 class="forecast" ></h2>
+        <i class="fa-solid fa-cloud"></i>
+        <h1 class="temprature"></h1>
+        <div class="min_max_temp">
+            <p class="min"></p>
+            <p class="max"></p>
+        </div>
+      </div>
+
+      <!-- Weather extra data -->
+       <div id="weather_info">
+        <div class="weather_card">
+            <i class="fa-solid fa-temperature-half"></i>
+            <div>
+                <p>Feel Like</p>
+                <div class="feel_like"></div>
+            </div>
+        </div>
+        <div class="weather_card">
+           <i class="fa-solid fa-seedling"></i>
+            <div>
+                <p>Humidity</p>
+                <div class="humidity"></div>
+            </div>
+        </div>
+        <div class="weather_card">
+            <i class="fa-solid fa-wind"></i>
+            <div>
+                <p>Wind</p>
+                <div class="wind"></div>
+            </div>
+        </div>
+        <div class="weather_card">
+            <i class="fa-solid fa-gauge"></i>
+            <div>
+                <p>Pressure</p>
+                <div class="pressure"></div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
